@@ -3,6 +3,7 @@
 import random
 # Define the game in a function
 def guess_loop():
+	i = 0
 	print("Type your name")
 	user = str(input())
 	# This is the number the user will have to guess, chosen randomly in between 1 and 100
@@ -10,7 +11,11 @@ def guess_loop():
 	print("I have in mind a number in between 1 and 100, can you find it?")
 	# Replay the question until the user finds the correct number
 	while True: 
-		try:
+		i = i + 1
+		try :
+			if i == 5 :
+				print("Nombre d'essais max dépassé the number was",guess)
+				return
 			# Read the number the user inputs
 			guess = int(input())
 			# Compare it to the number to guess
