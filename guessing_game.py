@@ -14,7 +14,7 @@ def guess_loop():
 		i = i + 1
 		try :
 			if i == 5 :
-				print("Nombre d'essais max dépassé the number was",guess)
+				print("Max number of tests exceeded, the number wasn't",guess)
 				return
 			# Read the number the user inputs
 			guess = int(input())
